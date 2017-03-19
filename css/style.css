@@ -1,0 +1,19 @@
+.main-table {
+  border-collapse: collapse;
+}
+
+.main-table td {
+  border: 1px solid #444444;
+}
+
+.delete-specialist {
+  display: none;
+}
+
+.modal-delete {
+  display: none;
+}
+
+.modal-delete-show {
+  display: block;
+}
