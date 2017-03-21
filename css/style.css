@@ -1,9 +1,7 @@
-.main-table {
-  border-collapse: collapse;
-}
-
-.main-table td {
-  border: 1px solid #444444;
+.body {
+  /*width: 750px;*/
+  margin: 0;
+  padding: 0;
 }
 
 .delete-specialist {
@@ -16,4 +14,134 @@
 
 .modal-delete-show {
   display: block;
+}
+
+div,
+article,
+ul {
+  outline: 1px dashed orangered;
+}
+
+h2,
+h3,
+b,
+p,
+a,
+li {
+  outline: 1px dashed #888888;
+}
+
+td {
+  outline: 1px dashed yellowgreen;
+}
+
+.main-table {
+  max-width: 750px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.main-table td {
+  /*border: 1px solid #444444;*/
+}
+
+.photo {
+  width: 18.66666666666667%; /*140/750*/
+}
+
+.photo img {
+  position: relative;
+  display: block;
+  width: 71.42857142857143%; /*100/140*/
+  margin: auto;
+  border-radius: 50%;
+}
+
+.photo img::after {
+  content: "";
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  z-index: 10;
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background-color: #90d23d;
+}
+
+.main-info {
+  padding: 50px 22px 44px 22px;
+}
+
+.main-info p {
+  margin: 0;
+}
+
+.main-info .name {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.main-info .specialty {
+  margin-bottom: 39px;
+  font-size: 2em;
+}
+
+.main-info .price {
+  font-size: 2.75em;
+}
+
+.specialist-indicators {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 8%; /*60/750*/
+  text-align: center;
+  background-color: yellow;
+}
+
+.rating {
+  margin-bottom: 27px;
+}
+
+.rating-icon {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 15px;
+  background-color: #ff7c00;
+  vertical-align: top;
+}
+
+.rating-value {
+  margin: 0;
+  font-size: 2em;
+  color: #ff7c00;
+}
+
+.comment {
+
+}
+
+.comment-icon {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 15px;
+  background-color: #00abff;
+  vertical-align: top;
+}
+
+.comment-count {
+  margin: 0;
+  font-size: 2em;
+  color: #00abff;
+}
+
+.specialist-contacts {
+  width: 22%; /*(132+33)/750*/
+  padding-left: 33px;
 }
